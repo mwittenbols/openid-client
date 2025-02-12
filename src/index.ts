@@ -2473,7 +2473,8 @@ export interface AuthorizationCodeGrantChecks {
 
 function stripParams(url: URL) {
   url = new URL(url)
-  url.search = ''
+  //2025/2/12: Querystring are supported in some IAM platforms, so we shouldn't strip Redurect URIs of them
+  // url.search = ''
   url.hash = ''
   return url.href
 }
