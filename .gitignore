@@ -21,7 +21,7 @@ coverage
 # node-waf configuration
 .lock-wscript
 
-build
+# build
 
 # Dependency directory
 node_modules
